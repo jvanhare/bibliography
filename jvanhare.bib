@@ -154,7 +154,57 @@
 % PEER-REVIEWED CONFERENCE PAPERS ################################################################## %
 % ################################################################################################## %
 
-@inproceedings{vanharen_aiaa_2022,
+@inproceedings{pechereau_icolse_2022,
+  title     = {3D modeling of an arc in interaction with composite materials},
+  booktitle = {International Conference on Lightning and Static Electricity (ICOLSE)},
+  month     = {September},
+  year      = {2022},
+  author    = {Fran\c{c}ois Pechereau and Fabien Tholin and Julien Vanharen
+               and Guillaume Puigt and Cl\'{e}ment Zaepffel and Adrien Loseille
+               and Fr\'{e}d\'{e}ric Alauzet and Philippe Lalande},
+  address   = {Madrid, Spain},
+  abstract  = {During the lightning strike on an aircraft and particularly in the pulsed arc phase,
+               the current can reach values in the range of 200 kA during microsecond timescale.
+               The direct effect of such arc on structures can be quite severe depending on
+               the material that composes it. This effect is even more troublesome on new materials
+               used in modern airplane such as composite materials.
+               Indeed the electrical conductivity of composites is not homogeneous like aluminum
+               but is generally tensorial. In such materials and for one layer, the electrical
+               conductivity is high in the same direction as the fibers and quite low in the
+               direction perpendicular to those fibers. Depending on the composite, there can be
+               many layers on top of each other with fibers aligned in different directions.
+               For the numerical study of an arc in the pulsed phase interacting with composite
+               materials it is then required to do 3D simulations. But such 3D computations
+               are very expensive and require the use of very fine meshes with at least
+               100 million of cells. In order to do these simulations in a reasonable
+               amount of time, access to at least few thousands number of cpus is mandatory.
+               One way to decrease the resources needed for these demanding 3D simulations
+               is to have a mesh that adapt itself in time and space to the physics simulated.
+               Following this idea, the MHD 2D/3D code Taranis developed at ONERA
+               has been coupled with Feflo.a, the anisotropic mesh refinement code
+               developed at INRIA. This new numerical framework allows to carry out
+               very demanding 3D computations at a fraction of the cost of computations
+               using fixed meshes. After the presentation of the code Taranis and the MHD model,
+               this new Taranis/Feflo.a framework will be presented with some examples.
+               In the second part of this work, a 3D numerical study showing the effect of
+               different materials on the dynamics of an arc in the pulsed phase will be detailed.
+               In the last part, a comparison with experimental results obtain on
+               the Griffon facility will be presented.}
+}
+
+@inproceedings{alauzet_aiaa_2022,
+  title     = {4th {AIAA} {CFD} High Lift Prediction Workshop results using metric-based
+               anisotropic mesh adaptation},
+  booktitle = {AIAA Fluid Dynamics Conference},
+  month     = {June},
+  year      = {2022},
+  author    = {Fr\'{e}d\'{e}ric Alauzet and Francesco Clerici and Adrien Loseille and
+               Matthieu Maunoury and Lucien Rochery and Cosimo Tarsia-Morisco and
+               Lucille-Marie Tenkes and Julien Vanharen},
+  address   = {Chicago, IL, USA}
+}
+
+@inproceedings{alauzet_scitech_2022,
   title     = {Some progress on {CFD} high lift prediction using metric-based anisotropic
                mesh adaptation},
   doi       = {10.2514/6.2022-0388},
@@ -176,7 +226,7 @@
                This represents a reduction in the mesh size by a factor of 75.}
 }
 
-@inproceedings{vanharen_aiaa_2021,
+@inproceedings{vanharen_scitech_2021,
   title     = {Nearfield anisotropic mesh adaptivity for the third {AIAA} sonic boom workshop},
   doi       = {10.2514/6.2021-0347},
   booktitle = {AIAA Scitech Forum},
@@ -201,7 +251,7 @@
                of each method.}
 }
 
-@inproceedings{tenkes_aiaa_2021,
+@inproceedings{tenkes_scitech_2021,
   title     = {Hybrid anisotropic mesh adaptation using metric-orthogonal approach},
   doi       = {10.2514/6.2021-1779},
   booktitle = {AIAA Scitech Forum},
