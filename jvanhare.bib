@@ -303,146 +303,146 @@
 % ################################################################################################## %
 
 @misc{vanharen_cea_2021,
-  title     = {Anisotropic mesh adaptation. Theory and applications},
-  booktitle = {CEA-Cesta seminar},
-  month     = {January},
-  year      = {2021},
-  author    = {Julien Vanharen},
-  address   = {Le Barp, France},
-  abstract  = {Computational Fluid Dynamics (CFD) entered the aerospace industry some decades ago.
-               During the last 20 years, the focus was mainly on increasing solver robustness
-               and accuracy. However, obvious as it may be, no mesh implies no solution and
-               the latter depends on the mesh quality. Indeed, mesh and solution should be seen
-               as a couple. The numerical schemes and the mesh generation methods have
-               to be tightly linked. A very efficient approach to address these challenges
-               is the anisotropic unstructured mesh adaptation and the vertex-centered
-               Mixed Finite Element Finite Volume (MFEFV) method. First of all, an emphasis
-               is put on the theory of anisotropic unstructured meshes and error estimates
-               for steady and unsteady flow simulations. The cavity operator,
-               including its non-manifold version, is then presented to obtain,
-               strictly speaking, the anisotropic mesh. To conclude with the theoretical aspects,
-               the key principles of the MFEFV method are presented.
-               Finally, this whole framework is illustrated by two major applications:
-               a fluid-structure interaction problem dealing with an elastic panel in shock tube
-               and the C608 low boom flight demonstrator test case from the
-               third AIAA Sonic Boom Prediction Workshop (SBPW).}
+  title        = {Anisotropic mesh adaptation. Theory and applications},
+  howpublished = {CEA-Cesta seminar},
+  month        = {January},
+  year         = {2021},
+  author       = {Julien Vanharen},
+  address      = {Le Barp, France},
+  abstract     = {Computational Fluid Dynamics (CFD) entered the aerospace industry some decades ago.
+                  During the last 20 years, the focus was mainly on increasing solver robustness
+                  and accuracy. However, obvious as it may be, no mesh implies no solution and
+                  the latter depends on the mesh quality. Indeed, mesh and solution should be seen
+                  as a couple. The numerical schemes and the mesh generation methods have
+                  to be tightly linked. A very efficient approach to address these challenges
+                  is the anisotropic unstructured mesh adaptation and the vertex-centered
+                  Mixed Finite Element Finite Volume (MFEFV) method. First of all, an emphasis
+                  is put on the theory of anisotropic unstructured meshes and error estimates
+                  for steady and unsteady flow simulations. The cavity operator,
+                  including its non-manifold version, is then presented to obtain,
+                  strictly speaking, the anisotropic mesh. To conclude with the theoretical aspects,
+                  the key principles of the MFEFV method are presented.
+                  Finally, this whole framework is illustrated by two major applications:
+                  a fluid-structure interaction problem dealing with an elastic panel in shock tube
+                  and the C608 low boom flight demonstrator test case from the
+                  third AIAA Sonic Boom Prediction Workshop (SBPW).}
 }
 
 @misc{vanharen_eccomas_2018,
-  title     = {Mesh adaptation for fluid-structure interaction problems},
-  booktitle = {6th European Conference on Computational Mechanics.
-               7th European Conference on Computational Fluid Dynamics },
-  month     = {June},
-  year      = {2018},
-  author    = {Julien Vanharen and R\'{e}mi Feuillet and Fr\'{e}d\'{e}ric Alauzet},
-  address   = {Glasgow, UK},
-  abstract  = {The fluid-structure interaction (FSI) problems deal with the interaction between
-               structures and fluid flow. They are present in many domains among aeroelastics,
-               flutter and bioengineering. Since the last decades, the computational resources had
-               significantly increased allowing the computation of challenging FSI problems.
-               However, the computational restitution time is still a key point for the industry,
-               specially when dealing with multi-physics simulations. In this work, we proposed
-               to demonstrate the efficiency of mesh adaptation to solve unsteady fluid-structure
-               interaction problems. The Navier-Stokes equations are solved by an edge-based
-               Finite Volume solver whereas the linear elasticity equation is solved by
-               the Finite Element Method using the Lagrange $P^1$ elements.
-               The coupling between both solvers is realized with boundary conditions.
-               The assumption of small displacement is made in this work leading to small strain.
-               Therefore, the mesh is not deformed and an Arbitrary Lagrangian Eulerian (ALE)
-               formulation for the Navier-Stokes equations is not needed.
-               For the unsteady mesh adaptation, the algorithm developed by Barral et al.
-               is used to adapt the flow mesh. The flow metric is then propagated to structure mesh
-               to adapt it by metric gradation. FSI problems are very complex to solve due
-               to nonlinearities and its multi-physic aspect.
-               Few analytical solutions are available. It is why, in this work, we decided
-               to treat a well-documented problem, namely the elastic panel in a shock tube
-               developed by Giordano et al.
-               Finally, we also plan to carry out simulations of three-dimensional complex cases.}
+  title        = {Mesh adaptation for fluid-structure interaction problems},
+  howpublished = {6th European Conference on Computational Mechanics.
+                  7th European Conference on Computational Fluid Dynamics },
+  month        = {June},
+  year         = {2018},
+  author       = {Julien Vanharen and R\'{e}mi Feuillet and Fr\'{e}d\'{e}ric Alauzet},
+  address      = {Glasgow, UK},
+  abstract     = {The fluid-structure interaction (FSI) problems deal with the interaction between
+                  structures and fluid flow. They are present in many domains among aeroelastics,
+                  flutter and bioengineering. Since the last decades, the computational resources had
+                  significantly increased allowing the computation of challenging FSI problems.
+                  However, the computational restitution time is still a key point for the industry,
+                  specially when dealing with multi-physics simulations. In this work, we proposed
+                  to demonstrate the efficiency of mesh adaptation to solve unsteady fluid-structure
+                  interaction problems. The Navier-Stokes equations are solved by an edge-based
+                  Finite Volume solver whereas the linear elasticity equation is solved by
+                  the Finite Element Method using the Lagrange $P^1$ elements.
+                  The coupling between both solvers is realized with boundary conditions.
+                  The assumption of small displacement is made in this work leading to small strain.
+                  Therefore, the mesh is not deformed and an Arbitrary Lagrangian Eulerian (ALE)
+                  formulation for the Navier-Stokes equations is not needed.
+                  For the unsteady mesh adaptation, the algorithm developed by Barral et al.
+                  is used to adapt the flow mesh. The flow metric is then propagated to structure mesh
+                  to adapt it by metric gradation. FSI problems are very complex to solve due
+                  to nonlinearities and its multi-physic aspect.
+                  Few analytical solutions are available. It is why, in this work, we decided
+                  to treat a well-documented problem, namely the elastic panel in a shock tube
+                  developed by Giordano et al.
+                  Finally, we also plan to carry out simulations of three-dimensional complex cases.}
 }
 
 @misc{vanharen_tilda_first_2016,
-  title     = {Revisiting the spectral analysis for high-order spectral discontinuous methods},
-  booktitle = {TILDA - Symposium \& Workshop on Industrial LES \& DNS},
-  month     = {November},
-  year      = {2016},
-  author    = {Julien Vanharen and Guillaume Puigt and Xavier Vasseur
-               and Jean-Fran\c{c}ois Boussuge and Pierre Sagaut},
-  address   = {Toulouse, France},
-  abstract  = {The spectral analysis is a basic tool to characterise the behaviour of
-               any convection scheme. By nature, the solution projected onto the Fourier basis
-               enables to estimate the dissipation and the dispersion associated
-               with the spatial discretisation of the hyperbolic linear problem.
-               Such an approach is the prerequisite to define the associated
-               Points Per Wavelength (PPW) for capturing the solution wavelengthwith
-               a given mesh refinement. In this work, we wish to revisit such analysis
-               focusing attention on the SpectralDifference method.
-               First, using a space/time analysis, a new way to address the specific spectral
-               behaviour of the scheme is introduced for wavenumbers in [0, \pi],
-               following the matrix power method. For wavenumbers above \pi, an aliasing phenomenon
-               always occurs but it is now possible to understand and to control
-               the aliasing of the signal. It is shown that aliasing depends on the polynomial
-               degree and on the number of time steps. A new way to define dissipation and
-               dispersion is introduced and applied to wavenumbers larger than \pi.
-               Since thenew criteria recover the previous results for wavenumbers below \pi,
-               the new approach is an extension of all the previous ones for analysing dissipation
-               and dispersion. To conclude, the proposed analysis revisits the spectral analysis
-               first introduced by Van den Abeele and gives new explanations regarding
-               the spectral behaviour. The new spectral analysis leads to results
-               that differ from the ones published in previous studies but the mathematical
-               framework introduced in the presentation is well-posed and
-               confirmed by numerical simulations.}
+  title        = {Revisiting the spectral analysis for high-order spectral discontinuous methods},
+  howpublished = {TILDA - Symposium \& Workshop on Industrial LES \& DNS},
+  month        = {November},
+  year         = {2016},
+  author       = {Julien Vanharen and Guillaume Puigt and Xavier Vasseur
+                  and Jean-Fran\c{c}ois Boussuge and Pierre Sagaut},
+  address      = {Toulouse, France},
+  abstract     = {The spectral analysis is a basic tool to characterise the behaviour of
+                  any convection scheme. By nature, the solution projected onto the Fourier basis
+                  enables to estimate the dissipation and the dispersion associated
+                  with the spatial discretisation of the hyperbolic linear problem.
+                  Such an approach is the prerequisite to define the associated
+                  Points Per Wavelength (PPW) for capturing the solution wavelengthwith
+                  a given mesh refinement. In this work, we wish to revisit such analysis
+                  focusing attention on the SpectralDifference method.
+                  First, using a space/time analysis, a new way to address the specific spectral
+                  behaviour of the scheme is introduced for wavenumbers in [0, \pi],
+                  following the matrix power method. For wavenumbers above \pi, an aliasing phenomenon
+                  always occurs but it is now possible to understand and to control
+                  the aliasing of the signal. It is shown that aliasing depends on the polynomial
+                  degree and on the number of time steps. A new way to define dissipation and
+                  dispersion is introduced and applied to wavenumbers larger than \pi.
+                  Since thenew criteria recover the previous results for wavenumbers below \pi,
+                  the new approach is an extension of all the previous ones for analysing dissipation
+                  and dispersion. To conclude, the proposed analysis revisits the spectral analysis
+                  first introduced by Van den Abeele and gives new explanations regarding
+                  the spectral behaviour. The new spectral analysis leads to results
+                  that differ from the ones published in previous studies but the mathematical
+                  framework introduced in the presentation is well-posed and
+                  confirmed by numerical simulations.}
 }
 
 @misc{vanharen_tilda_second_2016,
-  title     = {Comparing the resolution power of standard finite difference and
-               spectral difference schemes},
-  booktitle = {TILDA - Symposium \& Workshop on Industrial LES \& DNS},
-  month     = {November},
-  year      = {2016},
-  author    = {Julien Vanharen and Guillaume Puigt and Xavier Vasseur and
-               Jean-Fran\c{c}ois Boussuge and Pierre Sagaut},
-  address   = {Toulouse, France},
-  abstract  = {The spectral analysis is a basic tool to characterise the behaviour of
-               any convection scheme. By nature, the solution projected onto the Fourier basis
-               enables to estimate the dissipation and the dispersion associated with the spatial
-               discretisation of the hyperbolic linear problem. Such an approach is the prerequisite
-               to define the associated Points Per Wavelength (PPW) for capturing the solution
-               wavelength with a given mesh refinement. This presentation follows the one
-               entitled Revisiting the spectral analysis for high-order spectral discontinuous
-               methods. In the first presentation, a new theoretical framework was introduced to
-               explain the spectral behaviour of the spectral difference scheme.
-               Here, we wish to compare the accuracy of the spectral difference scheme and the one
-               for standard finite difference schemes applied to aeroacoustics.
-               Such an analysis is a prerequisite to show that the spectral resolution
-               of the spectral difference method is in strong agreement with the spectral
-               resolution of well-established schemes for aeroacoustics. In practice, the two
-               standard finite difference schemes (applied to aeroacoustics) are the 6th order
-               compact scheme of Lele and a 4th order DRP scheme developed by Bogey and Bailly.
-               They are coupled with their relative filters and with a low-dissipation
-               low-dispersion time integration procedure. It is finally shown that the
-               Spectral Difference method is as accurate as (or even more accurate) than
-               the considered Finite Difference schemes. As a consequence, the Spectral
-               Difference approach is a good candidate to perform accurate unsteady
-               Large Eddy Simulations.}
+  title        = {Comparing the resolution power of standard finite difference and
+                  spectral difference schemes},
+  howpublished = {TILDA - Symposium \& Workshop on Industrial LES \& DNS},
+  month        = {November},
+  year         = {2016},
+  author       = {Julien Vanharen and Guillaume Puigt and Xavier Vasseur and
+                  Jean-Fran\c{c}ois Boussuge and Pierre Sagaut},
+  address      = {Toulouse, France},
+  abstract     = {The spectral analysis is a basic tool to characterise the behaviour of
+                  any convection scheme. By nature, the solution projected onto the Fourier basis
+                  enables to estimate the dissipation and the dispersion associated with the spatial
+                  discretisation of the hyperbolic linear problem. Such an approach is the prerequisite
+                  to define the associated Points Per Wavelength (PPW) for capturing the solution
+                  wavelength with a given mesh refinement. This presentation follows the one
+                  entitled Revisiting the spectral analysis for high-order spectral discontinuous
+                  methods. In the first presentation, a new theoretical framework was introduced to
+                  explain the spectral behaviour of the spectral difference scheme.
+                  Here, we wish to compare the accuracy of the spectral difference scheme and the one
+                  for standard finite difference schemes applied to aeroacoustics.
+                  Such an analysis is a prerequisite to show that the spectral resolution
+                  of the spectral difference method is in strong agreement with the spectral
+                  resolution of well-established schemes for aeroacoustics. In practice, the two
+                  standard finite difference schemes (applied to aeroacoustics) are the 6th order
+                  compact scheme of Lele and a 4th order DRP scheme developed by Bogey and Bailly.
+                  They are coupled with their relative filters and with a low-dissipation
+                  low-dispersion time integration procedure. It is finally shown that the
+                  Spectral Difference method is as accurate as (or even more accurate) than
+                  the considered Finite Difference schemes. As a consequence, the Spectral
+                  Difference approach is a good candidate to perform accurate unsteady
+                  Large Eddy Simulations.}
 }
 
 @misc{vanharen_3af_2015,
-  title     = {Two-dimensional spectral analysis of nonconforming grid interface.
-               Emphasis on unsteady flows},
-  booktitle = {50th 3AF International Conference on Applied Aerodynamics},
-  month     = {April},
-  year      = {2015},
-  author    = {Julien Vanharen and Guillaume Puigt and Marc Montagnac},
-  address   = {Toulouse, France},
-  abstract  = {A general framework is proposed to study the unsteady behaviour of nonconforming
-               grid interface between two structured blocks. Using the Finite Volume Method,
-               a two-dimensional spectral analysis is performed for a second order centred scheme
-               to compare with solutions obtained by the elsA software. The nonconforming grid
-               interface makes possible to coarse/refine each block, which is not without effect
-               on both stability and accuracy of the unsteady solution. High coarsening is
-               responsible for instabilities in the form of reflection of high-frequency waves
-               at the nonconforming grid interface. This problem is solved using a high order
-               interpolation, which depends on metric, and a Riemann solver.}
+  title        = {Two-dimensional spectral analysis of nonconforming grid interface.
+                  Emphasis on unsteady flows},
+  howpublished = {50th 3AF International Conference on Applied Aerodynamics},
+  month        = {April},
+  year         = {2015},
+  author       = {Julien Vanharen and Guillaume Puigt and Marc Montagnac},
+  address      = {Toulouse, France},
+  abstract     = {A general framework is proposed to study the unsteady behaviour of nonconforming
+                  grid interface between two structured blocks. Using the Finite Volume Method,
+                  a two-dimensional spectral analysis is performed for a second order centred scheme
+                  to compare with solutions obtained by the elsA software. The nonconforming grid
+                  interface makes possible to coarse/refine each block, which is not without effect
+                  on both stability and accuracy of the unsteady solution. High coarsening is
+                  responsible for instabilities in the form of reflection of high-frequency waves
+                  at the nonconforming grid interface. This problem is solved using a high order
+                  interpolation, which depends on metric, and a Riemann solver.}
 }
 
 % ################################################################################################## %
