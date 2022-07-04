@@ -21,7 +21,7 @@ download_bibliography() {
     for FILE in $(curl -s -l -u $FTP_USER:$PASSWORD ftp://$FTP_HOST:$FTP_PORT$FTP_DIR --ftp-ssl); do
         if [[ $FILE == *.pdf ]] then
             echo "Downloading $FTP_DIR$FILE to pdf/$FILE"
-            curl -S -s -u $FTP_USER:$PASSWORD -O ftp://$FTP_HOST:$FTP_PORT$FTP_DIR$FILE -o pdf/$FILE --ftp-ssl
+            curl -S -s -u $FTP_USER:$PASSWORD ftp://$FTP_HOST:$FTP_PORT$FTP_DIR$FILE -o pdf/$FILE --ftp-ssl
         fi
     done
 }
