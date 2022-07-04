@@ -11,7 +11,7 @@ upload_bibliography() {
     for FILE in $PWD/pdf/*.pdf; do
         F=$(basename "$FILE")
         echo "Uploading $FILE to $FTP_DIR$F"
-        curl -S -s -T $FILE -u $FTP_USER:$PASSWORD -O ftp://$FTP_HOST:$FTP_PORT$FTP_DIR$F --ftp-ssl
+        curl -S -s -T $FILE -u $FTP_USER:$PASSWORD ftp://$FTP_HOST:$FTP_PORT$FTP_DIR$F --ftp-ssl
     done
 }
 # Download the bibliography from the ftp server. ###################################################
