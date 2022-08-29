@@ -4,6 +4,13 @@ FTP_DIR="/Nemesis/bibliography/"
 FTP_HOST="jvanhare.freeboxos.fr"
 FTP_PORT="5273"
 
+# List the bibliography from the tfp server. #######################################################
+list_bibliography() {
+    read -rs 'PASSWORD?Enter the host password: '
+    echo ""
+    curl -u $FTP_USER:$PASSWORD ftp://$FTP_HOST:$FTP_PORT$FTP_DIR --ftp-ssl --list-only
+}
+
 # Upload the bibliography to the ftp server. #######################################################
 upload_bibliography() {
     read -rs 'PASSWORD?Enter the host password: '
@@ -19,7 +26,7 @@ download_bibliography() {
     read -rs 'PASSWORD?Enter the host password: '
     echo ""
     for FILE in $(curl -s -l -u $FTP_USER:$PASSWORD ftp://$FTP_HOST:$FTP_PORT$FTP_DIR --ftp-ssl); do
-        if [[ $FILE == *.pdf ]] then
+        if [[ $FILE == *.pdf ]]; then
             echo "Downloading $FTP_DIR$FILE to pdf/$FILE"
             curl -S -s -u $FTP_USER:$PASSWORD ftp://$FTP_HOST:$FTP_PORT$FTP_DIR$FILE -o pdf/$FILE --ftp-ssl
         fi

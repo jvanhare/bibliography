@@ -158,18 +158,64 @@
   year      = {2022},
   author    = {Eric Qu\'{e}merais and Bastien Andrieu and Bruno Maugars and Julien Coulet and
                St\'{e}phanie Lala and Julien Vanharen},
-  address   = {Hamburg, Germany}
+  address   = {Hamburg, Germany},
+  abstract  = {During the last decade, the Moore's law has proven to be outdated.
+               The computational power does not double anymore every year for a given cost
+               under the pursuit of the energy efficiency.
+               To address this issue, the High Performance Computing (HPC) industry showed
+               an incredible ingenuity by designing complex architectures.
+               Today, the HPC tends to have more and more cores on each node,
+               possibly with accelerators like General-Purpose Graphics Processing Unit (GPGPU)
+               or Field-Programmable Gate Array (FPGA), and with less and less memory.
+               As a corollary, the developers of scientific computing software
+               need to pay attention and master numerous key concepts,
+               which require great expertise, to hope to extract a reasonable performance.
+               These key concepts include programming on heterogeneous architectures,
+               multithreading programming, Message Passage Interface (MPI) programming,
+               load balancing, asynchronous and non-blocking communications,
+               cache blocking techniques, vectorization or even parallel Input/Output (I/O).
+               It is in this context that the ParaDiGM library was created to provide
+               the developers a progressive framework, which consists of a set
+               of low-, mid- and high-level services usable by many developers
+               of scientific computing software that rely on a mesh, typically when
+               solving partial differential equations on a given domain.
+               The ParaDiGM kernel is based on the key concept of a distributed or
+               partitioned view of data stored in an array.
+               After introducing ParaDiGM and giving some general information in the
+               first section, we shall attach great importance in the second section
+               to describe in details the distributed and
+               the partitioned approaches and their impact on parallel algorithms.
+               For instance, we will show that the partitioned view is not always well suited
+               for parallel algorithms and that the distributed view,
+               even though less intuitive, is better suited for specific algorithms.
+               New MPI communication protocols have been developed to switch from one view to the other.
+               Then, we will present parallel dedicated algorithms
+               for wall distance computation in the third section and isosurfaces computations
+               in the fourth section.
+               In each section, some applications will be shown with a special emphasis
+               on the parallel computational efficiency on several thousand cores.},
+  keywords  = {High Performance Computing (HPC), Message Passing Interface (MPI),
+               Massively parallel, Distributed/Partitioned approaches,
+               Unstructured meshes, Partial Differential Equation simulation,
+               Wall distance, Isosurface.}
 }
 @inproceedings{alauzet_aiaa_2022,
   title     = {4\textsuperscript{th} {AIAA} {CFD} High Lift Prediction Workshop results using metric-based
                anisotropic mesh adaptation},
+  doi       = {10.2514/6.2022-3521},
   booktitle = {AIAA Fluid Dynamics Conference},
   month     = {6},
   year      = {2022},
   author    = {Fr\'{e}d\'{e}ric Alauzet and Francesco Clerici and Adrien Loseille and
                Matthieu Maunoury and Lucien Rochery and Cosimo Tarsia-Morisco and
                Lucille-Marie Tenkes and Julien Vanharen},
-  address   = {Chicago, IL, USA}
+  address   = {Chicago, IL, USA},
+  abstract  = {This article presents CFD results obtained with the metric-based mesh adaptation platform
+               for the 4th AIAA CFD High-Lift Prediction Workshop on the new CRM-HL geometry.
+               We emphasize the need for a strong solver to achieve iterative convergence for this complex case
+               and we propose an alpha-continuation mesh adaptation algorithm to improve the prediction.
+               Two test cases of the workshop have been carried out:
+               the mesh convergence study at an angle of attack of 7.05 degrees and the C_L,max study.}
 }
 @inproceedings{alauzet_scitech_2022,
   title     = {Some progress on {CFD} high lift prediction using metric-based anisotropic
