@@ -15,8 +15,8 @@ jobs:
       - run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'github-actions@github.com'
-          git commit -am "GitHub Actions"
-          git push
+          git commit -am "GitHub Actions" || true
+          git push || true
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
