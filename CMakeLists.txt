@@ -21,10 +21,19 @@ add_custom_command(
           ${PROJECT_BINARY_DIR}/${PROJECT_NAME}
   DEPENDS ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bib
   COMMENT "Convert bibliography.bib to bibliography.json")
+add_custom_command(
+  OUTPUT ${PROJECT_BINARY_DIR}/jvanhare.json
+  COMMAND ${CITATION_JS} -i ${PROJECT_SOURCE_DIR}/src/jvanhare.bib -o
+          ${PROJECT_BINARY_DIR}/jvanhare
+  DEPENDS ${PROJECT_SOURCE_DIR}/src/jvanhare.bib
+  COMMENT "Convert jvanhare.bib to jvanhare.json")
 add_custom_target(
-  ${PROJECT_NAME} ALL DEPENDS ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bib
-                              ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.json)
+  ${PROJECT_NAME} ALL
+  DEPENDS ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bib
+          ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.json
+          ${PROJECT_BINARY_DIR}/jvanhare.json)
 
-install(FILES ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bib
-              ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.json
-        DESTINATION ${PROJECT_SOURCE_DIR})
+install(
+  FILES ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bib
+        ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.json
+        ${PROJECT_BINARY_DIR}/jvanhare.json DESTINATION ${PROJECT_SOURCE_DIR})
