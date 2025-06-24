@@ -162,6 +162,24 @@
 % ################################################################################################## %
 % PEER-REVIEWED CONFERENCE PAPERS ################################################################## %
 % ################################################################################################## %
+@inproceedings{gauchery_scitech_2025,
+  title     = {Comparison of several linear solvers on shared-memory architecture for Navier-Stokes
+               equations and adjoint system on anisotropic adapted meshes},
+  doi       = {10.2514/6.2025-1110},
+  booktitle = {AIAA Scitech Forum},
+  month     = {1},
+  year      = {2025},
+  author    = {Thomas Gauchery and Julien Vanharen and Lo\"{i}c Mar\'{e}chal and Fr\'{e}d\'{e}ric Alauzet},
+  address   = {Orlando, FL, USA},
+  abstract  = {This article presents a new methodology to improve linear solvers on parallel shared-memory
+               architecture in the context of Reynolds Averaged Navier-Stokes primal and adjoint equations.
+               The computations are realized in the context of metric-based anisotropic mesh adaptation,
+               thus efficiency and robustness of the new approach are crucial.
+               For this purpose, a domain decomposition approach coupled with coloring algorithm
+               for unstructured meshes is considered. It improves the convergence of the iterative solvers
+               considered to solve the linear systems. The new strategy is validated on multiple realistic
+               test cases to highlight the improved convergence for primal and adjoint problems.}
+}
 @inproceedings{pechereau_eucass_2023,
   title     = {3D modeling of an arc in interaction with a composite panel},
   doi       = {10.13009/EUCASS2023-701},
@@ -293,6 +311,24 @@
 % ################################################################################################## %
 % CONFERENCES AND SEMINARS ######################################################################### %
 % ################################################################################################## %
+@misc{barreau_icolse_brazil_2024,
+  title         = {Simulation of continuous arc with semi-implicit scheme and mesh adaptation.},
+  howpublished  = {ICOLSE Conference},
+  month         = {9},
+  year          = {2024},
+  author        = {Gabriel Barreau and Fran\c{c}ois Pechereau and Benjamin Khiar and
+                   Fabien Tholin and Philippe Lalande and Guillaume Puigt and Julien Vanharen 
+                   and Fr\'{e}d\'{e}ric Alauzet},
+  address       = {Campinas, Brazil},
+  abstract      = {In this work, modeling a continuous arc powered by a pointed cathode and
+                   a flat anode was carried out. For this simulation, a new semi-implicit scheme
+                   was implemented in the MHD code Taranis developed at ONERA. This semi-implicit
+                   method is derived from an existing method dedicated to perfect gases.
+                   In this work, it was extended to real gases. To significantly reduce the computational
+                   costs represented by 3D meshes, the Taranis code is coupled with feflo.a,
+                   an anisotropic mesh adaptation framework developed at INRIA. After the presentation
+                   of this new workflow, it is validated with the 3D simulation of a free-burning arc in argon.}
+}
 @misc{vanharen_cfd_canada_2023,
   title        = {7\textsuperscript{th} {AIAA} {CFD} Drag Prediction Workshop
                   results using anisotropic mesh adaptation},
