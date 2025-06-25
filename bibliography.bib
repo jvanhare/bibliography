@@ -311,23 +311,71 @@
 % ################################################################################################## %
 % CONFERENCES AND SEMINARS ######################################################################### %
 % ################################################################################################## %
+@misc{vanharen_m2p_spain_2025,
+  title        = {Unstructured mesh generation for exascale systems: a proxy application approach},
+  howpublished = {Math to Product 2025},
+  month        = {6},
+  year         = {2025},
+  author       = {Julien Vanharen},
+  address      = {Valencia, Spain},
+  abstract     = {The emergence of exascale computing, exemplified by machines like El Capitan
+                  achieving a peak LINPACK performance of 1.742 EFLOP/s,
+                  represents a revolutionary leap in computational power.
+                  However, utilizing this power remains a formidable challenge,
+                  as practical workloads achieve only a small fraction of the theoretical peak performance.
+                  Unstructured mesh workflows, in particular, are underutilized on exascale systems
+                  due to limitations in existing software, which is often sequential
+                  and memory-constrained, capable of generating only up to a billion tetrahedra.
+                  The NumPEx initiative, funded under the France 2030 Investment Plan
+                  and overseen by CEA, CNRS, and Inria, addresses these challenges by developing
+                  innovative software components for future European exascale systems.
+                  In this context, we present a novel proxy application designed to
+                  generate unstructured meshes with tens of billions of elements,
+                  far exceeding the capacity of current tools.
+                  The application begins with a coarse mesh comprising tens of million elements
+                  and employs a distributed MPI-based workflow to refine and
+                  dynamically re-partition the mesh for optimal load balancing.
+                  It supports canonical elements like tetrahedra, prisms, pyramids, and hexahedra,
+                  while offering basic functionalities for discretizing differential operators.
+                  These includes: looping over the elements and retrieving the vertex data,
+                  looping over vertices and identifying all elements sharing the vertex, and
+                  performing reductions on data associated with vertices or elements.
+                  The input coarse mesh ranges in size from a few megabytes to several gigabytes.
+                  It consists of the entities defining an unstructured mesh:
+                  a vertex, defined by its three-dimensional coordinates stored in double-precision floating-point format,
+                  a triangle, defined by its three vertices stored as three integers,
+                  a quadrilateral defined by its four vertices stored as four integers,
+                  a tetrahedron defined by its four vertices stored as four integers,
+                  a prism defined by its six vertices stored as six integers,
+                  a pyramid defined by its five vertices stored as five integers,
+                  a hexahedron defined by its eight vertices stored as eight integers.
+                  Each mesh entity has an associated flag called reference stored as an integer.
+                  The data must be read and partitioned in parallel.
+                  Using Adaptive Mesh Refinement (AMR) or anisotropic mesh adaptation, the input
+                  coarse mesh is progressively refined in parallel to obtain several tens of billion elements.
+                  If the input mesh is periodic, the output mesh maintains periodicity.
+                  The expected size of the output mesh is on the order several tens of gigabytes.
+                  This work represents a significant advancement in making unstructured mesh workflows scalable
+                  and efficient on exascale systems, opening new possibilities for scientific
+                  computing in fields such as fluid dynamics, climate modeling, and structural mechanics.}
+}
 @misc{barreau_icolse_brazil_2024,
-  title         = {Simulation of continuous arc with semi-implicit scheme and mesh adaptation},
-  howpublished  = {ICOLSE 2024},
-  month         = {9},
-  year          = {2024},
-  author        = {Gabriel Barreau and Fran\c{c}ois Pechereau and Benjamin Khiar and
-                   Fabien Tholin and Philippe Lalande and Guillaume Puigt and Julien Vanharen
-                   and Fr\'{e}d\'{e}ric Alauzet},
-  address       = {Campinas, Brazil},
-  abstract      = {In this work, modeling a continuous arc powered by a pointed cathode and
-                   a flat anode was carried out. For this simulation, a new semi-implicit scheme
-                   was implemented in the MHD code Taranis developed at ONERA. This semi-implicit
-                   method is derived from an existing method dedicated to perfect gases.
-                   In this work, it was extended to real gases. To significantly reduce the computational
-                   costs represented by 3D meshes, the Taranis code is coupled with feflo.a,
-                   an anisotropic mesh adaptation framework developed at INRIA. After the presentation
-                   of this new workflow, it is validated with the 3D simulation of a free-burning arc in argon.}
+  title        = {Simulation of continuous arc with semi-implicit scheme and mesh adaptation},
+  howpublished = {ICOLSE 2024},
+  month        = {9},
+  year         = {2024},
+  author       = {Gabriel Barreau and Fran\c{c}ois Pechereau and Benjamin Khiar and
+                  Fabien Tholin and Philippe Lalande and Guillaume Puigt and Julien Vanharen
+                  and Fr\'{e}d\'{e}ric Alauzet},
+  address      = {Campinas, Brazil},
+  abstract     = {In this work, modeling a continuous arc powered by a pointed cathode and
+                  a flat anode was carried out. For this simulation, a new semi-implicit scheme
+                  was implemented in the MHD code Taranis developed at ONERA. This semi-implicit
+                  method is derived from an existing method dedicated to perfect gases.
+                  In this work, it was extended to real gases. To significantly reduce the computational
+                  costs represented by 3D meshes, the Taranis code is coupled with feflo.a,
+                  an anisotropic mesh adaptation framework developed at INRIA. After the presentation
+                  of this new workflow, it is validated with the 3D simulation of a free-burning arc in argon.}
 }
 @misc{vanharen_cfd_canada_2023,
   title        = {7\textsuperscript{th} {AIAA} {CFD} Drag Prediction Workshop
